@@ -1,0 +1,31 @@
+/* dependant */
+
+@media (min-width: 768px) {
+  // small
+  .wrapper {
+    width: 750px;
+  }
+  @include col-(xsc);
+  @include col-(sc);
+}
+
+@media (min-width: 990px) {
+  // medium
+  .wrapper {
+    width: 960px;
+  }
+  @include col-(xsc);
+  @include col-(sc);
+  @include col-(mc);
+}
+
+@media (min-width: 1200px) {
+  // large
+  .wrapper {
+    width: 1170px;
+  }
+  @include col-(xsc);
+  @include col-(sc);
+  @include col-(mc);
+  @include col-(lc);
+}

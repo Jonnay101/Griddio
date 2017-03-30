@@ -1,0 +1,24 @@
+// mixins --------------------------------
+
+// simple clearfix mixin to clear floats...
+@mixin clearfix {
+  zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// produces mixins containing grid percentage widths
+// for all of the different screen sizes...
+@mixin col-($size) {
+  @for $i from 1 through $cols-per-row {
+    .#{$size}-#{$i} {
+      width: grid-maths($i);
+    }
+  }
+}

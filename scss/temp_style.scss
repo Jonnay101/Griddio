@@ -1,0 +1,91 @@
+/*
+THIS STYLESHEET IS NOT NEEDED FOR GRIDDIO TO FUNCTION AND IS ONLY USED
+HERE TO STYLE THE DEMO HTML PAGE.
+*/
+
+$box-height: 400px;
+$white: #fff;
+$d-grey: #333;
+
+
+body {
+  background: $white;
+  font-family: sans-serif;
+  color: $d-grey;
+  font-size: 16px;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: $box-height;
+  color: $d-grey;
+}
+
+h3 {
+  @extend h2;
+  line-height: $box-height / 2;
+}
+
+p {
+  display: none;
+  line-height: 21px;
+}
+
+.big-bx {
+  height: $box-height;
+  &-1 {
+    background: #00bfc8;
+  }
+  &-2 {
+    background: #c8000a;
+  }
+  &-3 {
+    background: #eee;
+  }
+}
+
+.small-bx {
+  height: $box-height / 2;
+  &-1 {
+    background: #ffa400;
+  }
+  &-2 {
+    background: #9fe331;
+  }
+  &-3 {
+    background: #f9fc1f;
+  }
+}
+
+.key {
+  background-color: #eee;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+dd {
+  margin-left: 0;
+  display: inline-block;
+}
+
+dt{
+  @extend dd;
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+  font-family: serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.underlined {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}

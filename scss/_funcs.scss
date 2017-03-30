@@ -1,0 +1,6 @@
+// functions -----------------------------
+
+// calculates the percentage width of the columns...
+@function grid-maths($col) {
+  @return ((100 / $cols-per-row) * $col) * 1%;
+}
